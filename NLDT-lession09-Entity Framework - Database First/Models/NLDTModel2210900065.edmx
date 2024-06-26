@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="NldtK22cnt3Lession07DbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="NldtKetQua">
+          <Key>
+            <PropertyRef Name="NldtmaSV" />
+          </Key>
+          <Property Name="NldtmaSV" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="NldtMaMH" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="NldtDiem" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="NldtKhoa">
+          <Key>
+            <PropertyRef Name="NldtMaKH" />
+          </Key>
+          <Property Name="NldtMaKH" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="NldttenKH" Type="nvarchar" MaxLength="50" />
+          <Property Name="NldtTrangThai" Type="bit" />
+        </EntityType>
+        <EntityType Name="NldtMonHoc">
+          <Key>
+            <PropertyRef Name="NldtMaMH" />
+          </Key>
+          <Property Name="NldtMaMH" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="NldtTenMH" Type="nchar" MaxLength="10" />
+          <Property Name="NldtSotiet" Type="int" />
+        </EntityType>
+        <EntityType Name="NldtSinhVien">
+          <Key>
+            <PropertyRef Name="NldtMaSV" />
+          </Key>
+          <Property Name="NldtMaSV" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="NldtTen" Type="nvarchar" MaxLength="50" />
+          <Property Name="NldtHo" Type="nvarchar" MaxLength="50" />
+          <Property Name="NldtPhai" Type="date" />
+          <Property Name="NldtNgaysinh" Type="bit" />
+          <Property Name="NldtNoiSinh" Type="nchar" MaxLength="10" />
+          <Property Name="NldtMaKH" Type="nchar" MaxLength="10" />
+          <Property Name="NldtHocBong" Type="nvarchar(max)" />
+          <Property Name="NldtDiemTrungBinh" Type="decimal" Precision="18" Scale="0" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityContainer Name="NldtK22cnt3Lession07DbModelStoreContainer">
+          <EntitySet Name="NldtKetQua" EntityType="Self.NldtKetQua" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="NldtKhoa" EntityType="Self.NldtKhoa" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="NldtMonHoc" EntityType="Self.NldtMonHoc" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="NldtSinhVien" EntityType="Self.NldtSinhVien" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="NldtK22cnt3Lession07DbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="NldtKetQua">
+          <Key>
+            <PropertyRef Name="NldtmaSV" />
+          </Key>
+          <Property Name="NldtmaSV" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="NldtMaMH" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="NldtDiem" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <EntityType Name="NldtKhoa">
+          <Key>
+            <PropertyRef Name="NldtMaKH" />
+          </Key>
+          <Property Name="NldtMaKH" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="NldttenKH" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NldtTrangThai" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="NldtMonHoc">
+          <Key>
+            <PropertyRef Name="NldtMaMH" />
+          </Key>
+          <Property Name="NldtMaMH" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="NldtTenMH" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="NldtSotiet" Type="Int32" />
+        </EntityType>
+        <EntityType Name="NldtSinhVien">
+          <Key>
+            <PropertyRef Name="NldtMaSV" />
+          </Key>
+          <Property Name="NldtMaSV" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="NldtTen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NldtHo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NldtPhai" Type="DateTime" Precision="0" />
+          <Property Name="NldtNgaysinh" Type="Boolean" />
+          <Property Name="NldtNoiSinh" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="NldtMaKH" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="NldtHocBong" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="NldtDiemTrungBinh" Type="Decimal" Precision="18" Scale="0" />
+        </EntityType>
+        <EntityContainer Name="NldtK22cnt3Lession07DbEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="NldtKetQua" EntityType="Self.NldtKetQua" />
+          <EntitySet Name="NldtKhoa" EntityType="Self.NldtKhoa" />
+          <EntitySet Name="NldtMonHoc" EntityType="Self.NldtMonHoc" />
+          <EntitySet Name="NldtSinhVien" EntityType="Self.NldtSinhVien" />
+          <EntitySet Name="sysdiagrams" EntityType="NldtK22cnt3Lession07DbModel.sysdiagrams" />
+        </EntityContainer>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="NldtK22cnt3Lession07DbModelStoreContainer" CdmEntityContainer="NldtK22cnt3Lession07DbEntities">
+          <EntitySetMapping Name="NldtKetQua">
+            <EntityTypeMapping TypeName="NldtK22cnt3Lession07DbModel.NldtKetQua">
+              <MappingFragment StoreEntitySet="NldtKetQua">
+                <ScalarProperty Name="NldtmaSV" ColumnName="NldtmaSV" />
+                <ScalarProperty Name="NldtMaMH" ColumnName="NldtMaMH" />
+                <ScalarProperty Name="NldtDiem" ColumnName="NldtDiem" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NldtKhoa">
+            <EntityTypeMapping TypeName="NldtK22cnt3Lession07DbModel.NldtKhoa">
+              <MappingFragment StoreEntitySet="NldtKhoa">
+                <ScalarProperty Name="NldtMaKH" ColumnName="NldtMaKH" />
+                <ScalarProperty Name="NldttenKH" ColumnName="NldttenKH" />
+                <ScalarProperty Name="NldtTrangThai" ColumnName="NldtTrangThai" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NldtMonHoc">
+            <EntityTypeMapping TypeName="NldtK22cnt3Lession07DbModel.NldtMonHoc">
+              <MappingFragment StoreEntitySet="NldtMonHoc">
+                <ScalarProperty Name="NldtMaMH" ColumnName="NldtMaMH" />
+                <ScalarProperty Name="NldtTenMH" ColumnName="NldtTenMH" />
+                <ScalarProperty Name="NldtSotiet" ColumnName="NldtSotiet" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NldtSinhVien">
+            <EntityTypeMapping TypeName="NldtK22cnt3Lession07DbModel.NldtSinhVien">
+              <MappingFragment StoreEntitySet="NldtSinhVien">
+                <ScalarProperty Name="NldtMaSV" ColumnName="NldtMaSV" />
+                <ScalarProperty Name="NldtTen" ColumnName="NldtTen" />
+                <ScalarProperty Name="NldtHo" ColumnName="NldtHo" />
+                <ScalarProperty Name="NldtPhai" ColumnName="NldtPhai" />
+                <ScalarProperty Name="NldtNgaysinh" ColumnName="NldtNgaysinh" />
+                <ScalarProperty Name="NldtNoiSinh" ColumnName="NldtNoiSinh" />
+                <ScalarProperty Name="NldtMaKH" ColumnName="NldtMaKH" />
+                <ScalarProperty Name="NldtHocBong" ColumnName="NldtHocBong" />
+                <ScalarProperty Name="NldtDiemTrungBinh" ColumnName="NldtDiemTrungBinh" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="NldtK22cnt3Lession07DbModel.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="definition" ColumnName="definition" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

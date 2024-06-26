@@ -1,0 +1,75 @@
+﻿@model IEnumerable<NLDT_lession09_Entity_Framework___Database_First.Models.NldtSinhVien>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NldtTen)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NldtHo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NldtPhai)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NldtNgaysinh)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NldtNoiSinh)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NldtMaKH)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NldtHocBong)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NldtDiemTrungBinh)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NldtTen)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NldtHo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NldtPhai)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NldtNgaysinh)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NldtNoiSinh)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NldtMaKH)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NldtHocBong)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NldtDiemTrungBinh)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.NldtMaSV }) |
+            @Html.ActionLink("Details", "Details", new { id=item.NldtMaSV }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.NldtMaSV })
+        </td>
+    </tr>
+}
+
+</table>

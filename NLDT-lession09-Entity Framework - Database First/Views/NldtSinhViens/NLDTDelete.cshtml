@@ -1,0 +1,88 @@
+﻿@model NLDT_lession09_Entity_Framework___Database_First.Models.NldtSinhVien
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>NldtSinhVien</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NldtTen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NldtTen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NldtHo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NldtHo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NldtPhai)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NldtPhai)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NldtNgaysinh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NldtNgaysinh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NldtNoiSinh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NldtNoiSinh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NldtMaKH)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NldtMaKH)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NldtHocBong)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NldtHocBong)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NldtDiemTrungBinh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NldtDiemTrungBinh)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

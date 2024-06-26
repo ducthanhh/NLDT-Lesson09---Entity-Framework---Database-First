@@ -1,0 +1,39 @@
+﻿@model IEnumerable<NLDT_lession09_Entity_Framework___Database_First.Models.NldtKhoa>
+
+@{
+    ViewBag.Title = "NLDTIndex";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "NLDTCreate")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NldttenKH)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NldtTrangThai)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NldttenKH)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NldtTrangThai)
+        </td>
+        <td>
+            @Html.ActionLink("NLDTEdit", "NLDTEdit", new { id=item.NldtMaKH }) |
+            @Html.ActionLink("NLDTDetails", "NLDTDetails", new { id=item.NldtMaKH }) |
+            @Html.ActionLink("NLDTDelete", "NLDTDelete", new { id=item.NldtMaKH })
+        </td>
+    </tr>
+}
+
+</table>

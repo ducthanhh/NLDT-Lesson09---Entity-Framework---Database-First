@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NldtK22cnt3Lession07DbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="NldtKetQua">
+    <Key>
+      <PropertyRef Name="NldtmaSV" />
+    </Key>
+    <Property Name="NldtmaSV" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="NldtMaMH" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="NldtDiem" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="NldtKhoa">
+    <Key>
+      <PropertyRef Name="NldtMaKH" />
+    </Key>
+    <Property Name="NldtMaKH" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="NldttenKH" Type="nvarchar" MaxLength="50" />
+    <Property Name="NldtTrangThai" Type="bit" />
+  </EntityType>
+  <EntityType Name="NldtMonHoc">
+    <Key>
+      <PropertyRef Name="NldtMaMH" />
+    </Key>
+    <Property Name="NldtMaMH" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="NldtTenMH" Type="nchar" MaxLength="10" />
+    <Property Name="NldtSotiet" Type="int" />
+  </EntityType>
+  <EntityType Name="NldtSinhVien">
+    <Key>
+      <PropertyRef Name="NldtMaSV" />
+    </Key>
+    <Property Name="NldtMaSV" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="NldtTen" Type="nvarchar" MaxLength="50" />
+    <Property Name="NldtHo" Type="nvarchar" MaxLength="50" />
+    <Property Name="NldtPhai" Type="date" />
+    <Property Name="NldtNgaysinh" Type="bit" />
+    <Property Name="NldtNoiSinh" Type="nchar" MaxLength="10" />
+    <Property Name="NldtMaKH" Type="nchar" MaxLength="10" />
+    <Property Name="NldtHocBong" Type="nvarchar(max)" />
+    <Property Name="NldtDiemTrungBinh" Type="decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityContainer Name="NldtK22cnt3Lession07DbModelStoreContainer">
+    <EntitySet Name="NldtKetQua" EntityType="Self.NldtKetQua" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NldtKhoa" EntityType="Self.NldtKhoa" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NldtMonHoc" EntityType="Self.NldtMonHoc" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NldtSinhVien" EntityType="Self.NldtSinhVien" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,82 @@
+﻿@model NLDT_lession09_Entity_Framework___Database_First.Models.NldtSinhVien
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>NldtSinhVien</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NldtTen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NldtTen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NldtHo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NldtHo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NldtPhai)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NldtPhai)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NldtNgaysinh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NldtNgaysinh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NldtNoiSinh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NldtNoiSinh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NldtMaKH)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NldtMaKH)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NldtHocBong)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NldtHocBong)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NldtDiemTrungBinh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NldtDiemTrungBinh)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.NldtMaSV }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

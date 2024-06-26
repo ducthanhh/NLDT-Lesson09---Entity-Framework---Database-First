@@ -1,0 +1,104 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\lesssion01\\NLDT-lession09-Entity Framework - Database First\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7F2BE2F6-55AB-4C27-A1AE-DB8D74AD806B}|NLDT-lession09-Entity Framework - Database First\\NLDT-lession09-Entity Framework - Database First.csproj|d:\\lesssion01\\nldt-lession09-entity framework - database first\\nldt-lession09-entity framework - database first\\controllers\\nldtsinhvienscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F2BE2F6-55AB-4C27-A1AE-DB8D74AD806B}|NLDT-lession09-Entity Framework - Database First\\NLDT-lession09-Entity Framework - Database First.csproj|solutionrelative:nldt-lession09-entity framework - database first\\controllers\\nldtsinhvienscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F2BE2F6-55AB-4C27-A1AE-DB8D74AD806B}|NLDT-lession09-Entity Framework - Database First\\NLDT-lession09-Entity Framework - Database First.csproj|d:\\lesssion01\\nldt-lession09-entity framework - database first\\nldt-lession09-entity framework - database first\\views\\nldtkhoas\\nldtindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7F2BE2F6-55AB-4C27-A1AE-DB8D74AD806B}|NLDT-lession09-Entity Framework - Database First\\NLDT-lession09-Entity Framework - Database First.csproj|solutionrelative:nldt-lession09-entity framework - database first\\views\\nldtkhoas\\nldtindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F2BE2F6-55AB-4C27-A1AE-DB8D74AD806B}|NLDT-lession09-Entity Framework - Database First\\NLDT-lession09-Entity Framework - Database First.csproj|d:\\lesssion01\\nldt-lession09-entity framework - database first\\nldt-lession09-entity framework - database first\\controllers\\nldtkhoascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F2BE2F6-55AB-4C27-A1AE-DB8D74AD806B}|NLDT-lession09-Entity Framework - Database First\\NLDT-lession09-Entity Framework - Database First.csproj|solutionrelative:nldt-lession09-entity framework - database first\\controllers\\nldtkhoascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F2BE2F6-55AB-4C27-A1AE-DB8D74AD806B}|NLDT-lession09-Entity Framework - Database First\\NLDT-lession09-Entity Framework - Database First.csproj|d:\\lesssion01\\nldt-lession09-entity framework - database first\\nldt-lession09-entity framework - database first\\views\\shared\\nldt_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7F2BE2F6-55AB-4C27-A1AE-DB8D74AD806B}|NLDT-lession09-Entity Framework - Database First\\NLDT-lession09-Entity Framework - Database First.csproj|solutionrelative:nldt-lession09-entity framework - database first\\views\\shared\\nldt_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F2BE2F6-55AB-4C27-A1AE-DB8D74AD806B}|NLDT-lession09-Entity Framework - Database First\\NLDT-lession09-Entity Framework - Database First.csproj|d:\\lesssion01\\nldt-lession09-entity framework - database first\\nldt-lession09-entity framework - database first\\models\\nldtmodel2210900065.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{7F2BE2F6-55AB-4C27-A1AE-DB8D74AD806B}|NLDT-lession09-Entity Framework - Database First\\NLDT-lession09-Entity Framework - Database First.csproj|solutionrelative:nldt-lession09-entity framework - database first\\models\\nldtmodel2210900065.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NldtSinhViensController.cs",
+              "DocumentMoniker": "D:\\lesssion01\\NLDT-lession09-Entity Framework - Database First\\NLDT-lession09-Entity Framework - Database First\\Controllers\\NldtSinhViensController.cs",
+              "RelativeDocumentMoniker": "NLDT-lession09-Entity Framework - Database First\\Controllers\\NldtSinhViensController.cs",
+              "ToolTip": "D:\\lesssion01\\NLDT-lession09-Entity Framework - Database First\\NLDT-lession09-Entity Framework - Database First\\Controllers\\NldtSinhViensController.cs",
+              "RelativeToolTip": "NLDT-lession09-Entity Framework - Database First\\Controllers\\NldtSinhViensController.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAYwCYAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T03:33:12.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NLDT_Layout.cshtml",
+              "DocumentMoniker": "D:\\lesssion01\\NLDT-lession09-Entity Framework - Database First\\NLDT-lession09-Entity Framework - Database First\\Views\\Shared\\NLDT_Layout.cshtml",
+              "RelativeDocumentMoniker": "NLDT-lession09-Entity Framework - Database First\\Views\\Shared\\NLDT_Layout.cshtml",
+              "ToolTip": "D:\\lesssion01\\NLDT-lession09-Entity Framework - Database First\\NLDT-lession09-Entity Framework - Database First\\Views\\Shared\\NLDT_Layout.cshtml",
+              "RelativeToolTip": "NLDT-lession09-Entity Framework - Database First\\Views\\Shared\\NLDT_Layout.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABcAAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-26T03:19:59.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NLDTIndex.cshtml",
+              "DocumentMoniker": "D:\\lesssion01\\NLDT-lession09-Entity Framework - Database First\\NLDT-lession09-Entity Framework - Database First\\Views\\NldtKhoas\\NLDTIndex.cshtml",
+              "RelativeDocumentMoniker": "NLDT-lession09-Entity Framework - Database First\\Views\\NldtKhoas\\NLDTIndex.cshtml",
+              "ToolTip": "D:\\lesssion01\\NLDT-lession09-Entity Framework - Database First\\NLDT-lession09-Entity Framework - Database First\\Views\\NldtKhoas\\NLDTIndex.cshtml",
+              "RelativeToolTip": "NLDT-lession09-Entity Framework - Database First\\Views\\NldtKhoas\\NLDTIndex.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-26T03:19:14.013Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NldtKhoasController.cs",
+              "DocumentMoniker": "D:\\lesssion01\\NLDT-lession09-Entity Framework - Database First\\NLDT-lession09-Entity Framework - Database First\\Controllers\\NldtKhoasController.cs",
+              "RelativeDocumentMoniker": "NLDT-lession09-Entity Framework - Database First\\Controllers\\NldtKhoasController.cs",
+              "ToolTip": "D:\\lesssion01\\NLDT-lession09-Entity Framework - Database First\\NLDT-lession09-Entity Framework - Database First\\Controllers\\NldtKhoasController.cs",
+              "RelativeToolTip": "NLDT-lession09-Entity Framework - Database First\\Controllers\\NldtKhoasController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T03:12:34.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NLDTModel2210900065.edmx [Diagram1]",
+              "DocumentMoniker": "D:\\lesssion01\\NLDT-lession09-Entity Framework - Database First\\NLDT-lession09-Entity Framework - Database First\\Models\\NLDTModel2210900065.edmx",
+              "RelativeDocumentMoniker": "NLDT-lession09-Entity Framework - Database First\\Models\\NLDTModel2210900065.edmx",
+              "ToolTip": "D:\\lesssion01\\NLDT-lession09-Entity Framework - Database First\\NLDT-lession09-Entity Framework - Database First\\Models\\NLDTModel2210900065.edmx [Diagram1]",
+              "RelativeToolTip": "NLDT-lession09-Entity Framework - Database First\\Models\\NLDTModel2210900065.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-06-26T03:01:09.521Z",
+              "EditorCaption": " [Diagram1]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
